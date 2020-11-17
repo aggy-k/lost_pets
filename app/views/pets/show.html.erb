@@ -1,0 +1,7 @@
+<h1><%= @pet.name %> </h1>
+
+<p>This pet, which is a <%= @pet.species %>, was found at <%= @pet.address %> on <%= @pet.found_on %>.</p>
+
+<%= link_to 'edit', edit_pet_path(@pet) %>
+
+<%= link_to 'delete', delete_pet_path(@pet), method: :delete, data: {confirm: "delete?"}  %>

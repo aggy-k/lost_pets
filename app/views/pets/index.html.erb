@@ -1,0 +1,6 @@
+<h1>All found pets</h1>
+
+<% @pets.each do |pet| %>
+  <!-- /pets/:id/edit/:name -->
+  <p><%= link_to pet.name, pet_path(id: pet.id) %> </p>
+<% end %>
